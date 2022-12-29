@@ -3,7 +3,7 @@ from typing import List
 
 def read_input(file: str):
     print(f"Open file {file}.")
-    with open(file, "r") as f:
+    with open(file, "r", encoding="utf-8") as f:
         calories: List[List[int]] = []
         current_elf: List[int] = []
         for line in f.readlines():
